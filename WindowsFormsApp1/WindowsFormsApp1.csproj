@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F1DF1FF-9892-415E-8A25-FCFAA5A4500E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated">
+      <HintPath>C:\Users\TienAnh\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\TienAnh\Downloads\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\TienAnh\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ShockwaveFlashObjects.13.0.4001\lib\net40\ShockwaveFlashObjects.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualReactiveWinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ee513efc52b401d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visual.Reactive.WinForms.1.0.0\lib\VisualReactiveWinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2DD.Designer.cs">
+      <DependentUpon>2DD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4DX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4DX.Designer.cs">
+      <DependentUpon>4DX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNews.Designer.cs">
+      <DependentUpon>AddNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShow.Designer.cs">
+      <DependentUpon>AddShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Couple2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Couple2D.Designer.cs">
+      <DependentUpon>Couple2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCouple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCouple.Designer.cs">
+      <DependentUpon>InfoCouple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info2DD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info2DD.Designer.cs">
+      <DependentUpon>Info2DD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info4DXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info4DXX.Designer.cs">
+      <DependentUpon>Info4DXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gmail.Designer.cs">
+      <DependentUpon>Gmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Homee.Designer.cs">
+      <DependentUpon>Homee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iteam_Newss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Iteam_Newss.Designer.cs">
+      <DependentUpon>Iteam_Newss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mail.Designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="News.Designer.cs">
+      <DependentUpon>News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Newss.Designer.cs">
+      <DependentUpon>Newss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMail.Designer.cs">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpControl\RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpControl\RJTextBox.Designer.cs" />
+    <Compile Include="TICKETT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TICKETT.Designer.cs">
+      <DependentUpon>TICKETT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info4DX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="info4DX.Designer.cs">
+      <DependentUpon>info4DX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoThea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="infoThea.Designer.cs">
+      <DependentUpon>infoThea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoThea2D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="infoThea2D.Designer.cs">
+      <DependentUpon>infoThea2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.cs" />
+    <Compile Include="MoreMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreMovie.Designer.cs">
+      <DependentUpon>MoreMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie.Designer.cs">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moviee_Show.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Moviee_Show.Designer.cs">
+      <DependentUpon>Moviee_Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Movie_Item.Designer.cs">
+      <DependentUpon>Movie_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_Show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie_Show.Designer.cs">
+      <DependentUpon>Movie_Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RE_PASSWORD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RE_PASSWORD.Designer.cs">
+      <DependentUpon>RE_PASSWORD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Show.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Show.Designer.cs">
+      <DependentUpon>Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Showw.Designer.cs">
+      <DependentUpon>Showw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpControl\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SpControl\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.cs" />
+    <Compile Include="Ticked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticked.Designer.cs">
+      <DependentUpon>Ticked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="2DD.resx">
+      <DependentUpon>2DD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4DX.resx">
+      <DependentUpon>4DX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNews.resx">
+      <DependentUpon>AddNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddShow.resx">
+      <DependentUpon>AddShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Couple2D.resx">
+      <DependentUpon>Couple2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCouple.resx">
+      <DependentUpon>InfoCouple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info2DD.resx">
+      <DependentUpon>Info2DD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info4DXX.resx">
+      <DependentUpon>Info4DXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gmail.resx">
+      <DependentUpon>Gmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homee.resx">
+      <DependentUpon>Homee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iteam_Newss.resx">
+      <DependentUpon>Iteam_Newss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News.resx">
+      <DependentUpon>News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newss.resx">
+      <DependentUpon>Newss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMail.resx">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpControl\RJTextBox.resx" />
+    <EmbeddedResource Include="TICKETT.resx">
+      <DependentUpon>TICKETT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info4DX.resx">
+      <DependentUpon>info4DX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoThea.resx">
+      <DependentUpon>infoThea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoThea2D.resx">
+      <DependentUpon>infoThea2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreMovie.resx">
+      <DependentUpon>MoreMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie.resx">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moviee_Show.resx">
+      <DependentUpon>Moviee_Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_Item.resx">
+      <DependentUpon>Movie_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_Show.resx">
+      <DependentUpon>Movie_Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RE_PASSWORD.resx">
+      <DependentUpon>RE_PASSWORD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show.resx">
+      <DependentUpon>Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showw.resx">
+      <DependentUpon>Showw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpControl\RJComboBox.resx">
+      <DependentUpon>RJComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support.resx">
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticked.resx">
+      <DependentUpon>Ticked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vietnam_cinema_movie_theater.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+    <None Include="Resources\calendarDark.png" />
+    <Content Include="Resources\png-clipart-computer-icons-directory-windows-10-others-miscellaneous-angle-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InFoTheaterr\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
